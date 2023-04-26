@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=NekoBox
+Exec=nekobox
+Terminal=false
+Type=Application
+Icon=io.github.MatsuriDayo.nekoray
+Categories=Network;
+Comment=Qt based cross-platform GUI proxy configuration manager

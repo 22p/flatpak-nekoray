@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.MatsuriDayo.nekoray</id>
+  <launchable type="desktop-id">io.github.MatsuriDayo.nekoray.desktop</launchable>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0</project_license>
+  <name>NekoBox</name>
+  <summary>Qt based cross-platform GUI proxy configuration manager (backend: v2ray / sing-box)</summary>
+  <developer_name>MatsuriDayo</developer_name>
+  <url type="homepage">https://github.com/MatsuriDayo/nekoray</url>
+  <url type="bugtracker">https://github.com/MatsuriDayo/nekoray/issues</url>
+  <url type="help">https://matsuridayo.github.io/</url>
+  <description>
+    <p>基于 Qt 的跨平台代理配置管理器 (后端 v2ray / sing-box)</p>
+    <p>目前支持 Windows / Linux / macOS amd64 开箱即用</p>
+    <p>Qt based cross-platform GUI proxy configuration manager (backend: v2ray / sing-box)</p>
+    <p>Support Windows / Linux / macOS amd64 out of the box now.</p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://matsuridayo.github.io/assets/images/nekoray1.jpg</image>
+    </screenshot>
+  </screenshots>
+  <categories>
+    <category>Network</category>
+  </categories>
+  <releases>
+    <release version="2.26" date="2023-4-18"/>
+  </releases>
+  <content_rating type="oars-1.1">
+  </content_rating>
+</component>

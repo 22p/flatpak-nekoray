@@ -1,0 +1,54 @@
+app-id: io.github.MatsuriDayo.nekoray
+runtime: org.kde.Platform
+runtime-version: '5.15-22.08'
+sdk: org.kde.Sdk
+command: nekobox
+separate-locales: false
+
+finish-args:
+  - --share=network
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=dri
+  - --persist=config
+
+cleanup:
+  - /include
+  - /lib/pkgconfig
+  - /share/gtk-doc
+  - '*.la'
+
+modules:
+  - name: nekoray
+    buildsystem: simple
+    build-commands:
+      - ar x nekoray-*.deb
+      - rm -f nekoray-*.deb
+      - tar xf data.tar.xz
+      - mv opt/nekoray /app/bin
+      - rm -rf opt control.tar.gz data.tar.xz debian-binary
+      - install -Dm755 nekobox /app/bin/nekobox
+      - install -Dm644 io.github.MatsuriDayo.nekoray.png /app/share/icons/hicolor/256x256/apps/io.github.MatsuriDayo.nekoray.png
+      - install -Dm644 io.github.MatsuriDayo.nekoray.desktop /app/share/applications/io.github.MatsuriDayo.nekoray.desktop
+      - install -Dm644 io.github.MatsuriDayo.nekoray.metainfo.xml /app/share/metainfo/io.github.MatsuriDayo.nekoray.metainfo.xml
+
+    sources:
+      - type: script
+        commands:
+          - nekoray -appdata
+        dest-filename: nekobox
+        
+      - type: file
+        url: https://github.com/MatsuriDayo/nekoray/releases/download/2.26/nekoray-2.26-2023-04-18-debian-x64.deb
+        sha256: baab63b6ccbb26adfcf0ac7e8ed624caf64f07da5174c849dfee65aa3bdd6444
+
+      - type: file
+        path: io.github.MatsuriDayo.nekoray.desktop
+
+      - type: file
+        path: io.github.MatsuriDayo.nekoray.png
+
+      - type: file
+        path: io.github.MatsuriDayo.nekoray.metainfo.xml
+      
