@@ -26,10 +26,10 @@ modules:
       - ar x nekoray-*.deb
       - rm -f nekoray-*.deb
       - tar xf data.tar.xz
-      - mv opt/nekoray /app/bin
+      - mkdir -p /app/bin && mv opt/nekoray/* /app/bin
       - rm -rf opt control.tar.gz data.tar.xz debian-binary
       - install -Dm755 nekobox /app/bin/nekobox
-      - install -Dm644 io.github.MatsuriDayo.nekoray.png /app/share/icons/hicolor/256x256/apps/io.github.MatsuriDayo.nekoray.png
+      - mkdir -p /app/share/icons/hicolor/256x256/apps && cp /app/bin/nekobox.png /app/share/icons/hicolor/256x256/apps/io.github.MatsuriDayo.nekoray.png
       - install -Dm644 io.github.MatsuriDayo.nekoray.desktop /app/share/applications/io.github.MatsuriDayo.nekoray.desktop
       - install -Dm644 io.github.MatsuriDayo.nekoray.metainfo.xml /app/share/metainfo/io.github.MatsuriDayo.nekoray.metainfo.xml
 
@@ -40,14 +40,11 @@ modules:
         dest-filename: nekobox
         
       - type: file
-        url: https://github.com/MatsuriDayo/nekoray/releases/download/2.27/nekoray-2.27-2023-04-27-debian-x64.deb
-        sha256: 97d252d91d615b5a08cead09092a03595de8b0dd7899f041a17e349fa4064ee1
+        url: https://github.com/MatsuriDayo/nekoray/releases/download/2.28/nekoray-2.28-2023-05-03-debian-x64.deb
+        sha256: 390604f72492e92ca4c089ae3f81baab7bc94abce59b251832dc4599c82fa2b9
 
       - type: file
         path: io.github.MatsuriDayo.nekoray.desktop
-
-      - type: file
-        path: io.github.MatsuriDayo.nekoray.png
 
       - type: file
         path: io.github.MatsuriDayo.nekoray.metainfo.xml
