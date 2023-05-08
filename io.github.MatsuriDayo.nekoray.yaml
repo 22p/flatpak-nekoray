@@ -42,6 +42,11 @@ modules:
       - type: file
         url: https://github.com/MatsuriDayo/nekoray/releases/download/2.28/nekoray-2.28-2023-05-03-debian-x64.deb
         sha256: 390604f72492e92ca4c089ae3f81baab7bc94abce59b251832dc4599c82fa2b9
+        x-checker-data:
+          type: html
+          url: https://github.com/MatsuriDayo/nekoray/raw/main/nekoray_version.txt
+          version-pattern: ([0-9.-]+)
+          url-template: https://github.com/MatsuriDayo/nekoray/releases/download/$major.$minor/nekoray-$version-debian-x64.deb
 
       - type: file
         path: io.github.MatsuriDayo.nekoray.desktop
