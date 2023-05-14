@@ -1,6 +1,6 @@
 app-id: io.github.MatsuriDayo.nekoray
 runtime: org.kde.Platform
-runtime-version: '5.15-22.08'
+runtime-version: 5.15-22.08
 sdk: org.kde.Sdk
 command: nekobox
 separate-locales: false
@@ -29,7 +29,8 @@ modules:
       - mkdir -p /app/bin && mv opt/nekoray/* /app/bin
       - rm -rf opt control.tar.gz data.tar.xz debian-binary
       - install -Dm755 nekobox /app/bin/nekobox
-      - mkdir -p /app/share/icons/hicolor/256x256/apps && cp /app/bin/nekobox.png /app/share/icons/hicolor/256x256/apps/io.github.MatsuriDayo.nekoray.png
+      - mkdir -p /app/share/icons/hicolor/256x256/apps && cp /app/bin/nekobox.png
+        /app/share/icons/hicolor/256x256/apps/io.github.MatsuriDayo.nekoray.png
       - install -Dm644 io.github.MatsuriDayo.nekoray.desktop /app/share/applications/io.github.MatsuriDayo.nekoray.desktop
       - install -Dm644 io.github.MatsuriDayo.nekoray.metainfo.xml /app/share/metainfo/io.github.MatsuriDayo.nekoray.metainfo.xml
 
@@ -38,10 +39,10 @@ modules:
         commands:
           - nekoray -appdata
         dest-filename: nekobox
-        
+
       - type: file
-        url: https://github.com/MatsuriDayo/nekoray/releases/download/2.28/nekoray-2.28-2023-05-03-debian-x64.deb
-        sha256: 390604f72492e92ca4c089ae3f81baab7bc94abce59b251832dc4599c82fa2b9
+        url: https://github.com/MatsuriDayo/nekoray/releases/download/3.0/nekoray-3.0-2023-05-14-debian-x64.deb
+        sha256: ffd1cf13a9639ef3b675c9313b4656a7e083205838b372b2ba1cfafedd4eb2a3
         x-checker-data:
           type: html
           url: https://github.com/MatsuriDayo/nekoray/raw/main/nekoray_version.txt
@@ -53,4 +54,4 @@ modules:
 
       - type: file
         path: io.github.MatsuriDayo.nekoray.metainfo.xml
-      
+
