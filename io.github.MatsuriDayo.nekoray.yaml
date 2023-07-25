@@ -41,8 +41,8 @@ modules:
         dest-filename: nekobox
 
       - type: file
-        url: https://github.com/MatsuriDayo/nekoray/releases/download/3.12/nekoray-3.12-2023-07-17-debian-x64.deb
-        sha256: f650f741a6a104c7e8da1a39f6322309b00ebb71e584c7df237db80f8f19688a
+        url: https://github.com/MatsuriDayo/nekoray/releases/download/3.13/nekoray-3.13-2023-07-24-debian-x64.deb
+        sha256: 5044174c757556d35f50823fe80292e01cf2d3513dae3e278d1bfd75f3e5bc04
         x-checker-data:
           type: html
           url: https://github.com/MatsuriDayo/nekoray/raw/main/nekoray_version.txt
