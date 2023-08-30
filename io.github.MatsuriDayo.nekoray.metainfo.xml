@@ -4,17 +4,15 @@
   <launchable type="desktop-id">io.github.MatsuriDayo.nekoray.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0</project_license>
-  <name>NekoBox</name>
-  <summary>Qt based cross-platform GUI proxy configuration manager (backend: v2ray / sing-box)</summary>
+  <name>NekoRay</name>
+  <summary>NekoRay / NekoBox For PC</summary>
   <developer_name>MatsuriDayo</developer_name>
   <url type="homepage">https://github.com/MatsuriDayo/nekoray</url>
   <url type="bugtracker">https://github.com/MatsuriDayo/nekoray/issues</url>
   <url type="help">https://matsuridayo.github.io/</url>
   <description>
-    <p>基于 Qt 的跨平台代理配置管理器 (后端 v2ray / sing-box)</p>
-    <p>目前支持 Windows / Linux / macOS amd64 开箱即用</p>
-    <p>Qt based cross-platform GUI proxy configuration manager (backend: v2ray / sing-box)</p>
-    <p>Support Windows / Linux / macOS amd64 out of the box now.</p>
+    <p>基于 Qt 的跨平台代理配置管理器 (后端 Xray / sing-box)</p>
+    <p>Qt based cross-platform GUI proxy configuration manager (backend: Xray / sing-box)</p>
   </description>
   <screenshots>
     <screenshot type="default">
@@ -44,9 +42,9 @@
     <release version="3.2-2023-05-18" date="2023-05-18"/>
     <release version="3.1-2023-05-17" date="2023-05-17"/>
     <release version="3.0-2023-05-14" date="2023-05-14"/>
-    <release version="2.28" date="2023-05-03"/>
-    <release version="2.27" date="2023-04-27"/>
-    <release version="2.26" date="2023-04-18"/>
+    <release version="2.28-2023-05-03" date="2023-05-03"/>
+    <release version="2.27-2023-04-27" date="2023-04-27"/>
+    <release version="2.26-2023-04-18" date="2023-04-18"/>
   </releases>
   <content_rating type="oars-1.1">
   </content_rating>
