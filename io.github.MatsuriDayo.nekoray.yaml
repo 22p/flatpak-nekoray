@@ -25,7 +25,7 @@ modules:
     build-commands:
       - ar x nekoray-*.deb
       - rm -f nekoray-*.deb
-      - tar xf data.tar.xz
+      - tar xf data.tar.xz --no-same-owner
       - mkdir -p /app/bin && mv opt/nekoray/* /app/bin
       - rm -rf opt control.tar.gz data.tar.xz debian-binary
       - install -Dm755 nekobox /app/bin/nekobox
