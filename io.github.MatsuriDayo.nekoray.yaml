@@ -47,7 +47,7 @@ modules:
           type: html
           url: https://github.com/MatsuriDayo/nekoray/raw/main/nekoray_version.txt
           version-pattern: ([0-9.-]+)
-          url-template: https://github.com/MatsuriDayo/nekoray/releases/download/$major.$minor/nekoray-$version-debian-x64.deb
+          url-template: https://github.com/MatsuriDayo/nekoray/releases/download/$major.$minor.$micro/nekoray-$version-debian-x64.deb
 
       - type: file
         path: io.github.MatsuriDayo.nekoray.desktop
